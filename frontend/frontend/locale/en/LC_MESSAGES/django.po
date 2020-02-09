@@ -29,29 +29,9 @@ msgstr ""
 "rss feed generator, create rss, webpage to rss, html to rss, free rss "
 "generator, rss builder, create rss feed, create rss online"
 
-#: templates/base.html:65 templates/frontend/contact.html:7
-msgid "contact"
-msgstr "Contact"
-
-#: templates/base.html:93
-msgid "made_by"
-msgstr "Made by"
-
-#: templates/base.html:93
-msgid "made_name"
-msgstr "Alexandr Nesterenko"
-
-#: templates/frontend/contact.html:18
-msgid "contact.title"
-msgstr "Contact us by email:"
-
-#: templates/frontend/contact.html:24
-msgid "contact.msg"
-msgstr "We will answer ASAP"
-
 #: templates/frontend/index.html:5
 msgid "index_title"
-msgstr "PolitePol.com: Generate RSS feeds for any web page"
+msgstr "Generate RSS feeds for any web page"
 
 #: templates/frontend/index.html:8 templates/frontend/index.html.py:20
 msgid "brand"
@@ -69,10 +49,6 @@ msgstr "Create your feed yourself!"
 #: templates/frontend/index.html:33
 msgid "go"
 msgstr "Go!"
-
-#: templates/frontend/index.html:46
-msgid "help.header"
-msgstr "Video tutorial how to make your feed:"
 
 #: templates/frontend/preview.html:11
 msgid "subscribe.feed_ready"

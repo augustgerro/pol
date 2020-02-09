@@ -14,7 +14,8 @@ RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends \
 WORKDIR /app
 ADD . .
 
-RUN pip install -r requirements.txt
+RUN apt install -y libmysqlclient-dev 
+RUN pip install -U setuptools && pip install -r requirements.txt
 
 RUN cp ./nginx/default.site-example /etc/nginx/sites-available/default \
     && cp ./frontend/frontend/settings.py.example ./frontend/frontend/settings.py
