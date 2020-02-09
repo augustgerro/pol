@@ -3,7 +3,22 @@
 This is source code of RSS feed generator website with user friendly interface.
 
 
-## Run servers
+## Configure 
+
+Just create and fill `.env` file. Ex:
+
+```ini
+cat << EOF > .env
+
+DB_NAME=politepol
+DB_USER=rooooooooooot
+DB_PASSWORD=toooooooooooor
+MYSQL_ROOT_PASSWORD=rootpass
+
+EOF
+```
+
+## Run application and DB
 
 
 ```bash
@@ -11,12 +26,15 @@ docker-compose build
 docker-compose up -d
 ```
 
-## Open in browser 
+## Now lets test in browser 
 
-Local host IP and port (or use your piblic address ):
+Use your Local or public IP address. Ex:
 http://127.0.0.1:8088
 
 
-## License
+
+---
+
+#### License
 
 MIT
