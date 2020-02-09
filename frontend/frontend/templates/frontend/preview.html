@@ -18,7 +18,9 @@
   <div class="media-body">
     <h4 class="media-heading">{% trans 'subscribe.your_feed' %}:</h4>
     <h3>
-      <a href="{{ feed_url }}" target="_blank">{{ feed_url }}</a>
+      <a href="{{ feed_url }}" target="_blank"><script type="text/javascript">
+        document.write(location.protocol + '//' + location.hostname);
+      </script>{{ feed_url }}</a>
     </h3>
   </div>
 
@@ -28,7 +30,7 @@
   <script type="text/javascript">
       function tryGetFeed() {
           $.getFeed({
-              url: '{{ feed_url }}',
+              url: '{{ feed_url }}?sanitize=Y',
               success: function (feed) {
                   if ('items' in feed) {
                       $('#preview').empty()
